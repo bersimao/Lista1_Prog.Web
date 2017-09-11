@@ -1,0 +1,16 @@
+<?php
+	header("Content-type: text/html; charset=utf-8");
+?>
+
+<?php
+	echo '</BR>';
+	echo"<b>=> EXERCÍCIO 01</b></BR></BR>";
+	$numero1 = 8;
+	$numero2 = 10;
+
+	if($numero1 > $numero2){
+		echo"Maior número é o $numero1<BR/>";}
+	else
+		echo"Menor número é o $numero2<BR/>";
+
+?>
