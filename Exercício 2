@@ -1,0 +1,8 @@
+<?php
+$numero;
+
+for($numero=0; $numero<101; $numero++){
+echo"$numero<BR/>";
+}
+
+?>
