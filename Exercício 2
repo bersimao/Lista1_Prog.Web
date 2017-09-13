@@ -1,8 +1,19 @@
 <?php
-$numero;
+	header("Content-type: text/html; charset=utf-8");
+?>
 
-for($numero=0; $numero<101; $numero++){
-echo"$numero<BR/>";
-}
+<?php
 
+	$numero = 8;
+	echo '</BR>';
+	echo"<b>=> EXERCÍCIO 02</b></BR></BR>";
+	if($numero%2 !=0)
+		echo"O número é impar ";
+	else
+		echo"O número é par ";
+
+	if($numero > 0)
+		echo"e positivo<BR/>";
+	else
+		echo"e negativo<BR/>";
 ?>
