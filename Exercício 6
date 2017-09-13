@@ -1,0 +1,16 @@
+<?php
+	header("Content-type: text/html; charset=utf-8");
+?>
+
+<?php
+
+	$base = 5;
+	$altura = 10;
+	$area;
+	echo '</BR>';
+	echo"<b>=> EXERCÍCIO 06</b></BR></BR>";	
+	$area = $base * $altura;
+	
+	echo"Área do retângulo de base $base e altura $altura é = $area<BR/> ";	
+		
+?>
