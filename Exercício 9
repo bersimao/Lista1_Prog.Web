@@ -1,0 +1,27 @@
+<?php
+	header("Content-type: text/html; charset=utf-8");
+?>
+
+<?php
+
+	$idade = 21;
+	echo '</BR>';
+	echo"<b>=> EXERCÍCIO 09</b></BR></BR>";	
+	switch($idade){
+		case($idade >= 5 && $idade <= 7):	
+			echo"Categoria Infantil A<BR/> ";
+			break;
+		case($idade >= 8 && $idade <= 10):
+			echo"Categoria Infantil B<BR/> ";
+			break;		
+		case($idade >= 11 && $idade <= 13):
+			echo"Categoria Juvenil A<BR/> ";
+			break;				
+		case($idade >= 14 && $idade <= 17):
+			echo"Categoria Juvenil B<BR/> ";
+			break;		
+		case($idade >= 18):
+			echo"Categoria Sênior<BR/> ";
+			break;		
+	}			
+?>
