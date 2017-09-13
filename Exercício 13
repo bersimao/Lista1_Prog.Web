@@ -1,0 +1,27 @@
+<?php
+	header("Content-type: text/html; charset=utf-8");
+?>
+
+<?php
+
+	$lados = 1;
+	echo"Legenda<BR/>";
+	echo"B = base;<BR/>";
+	echo"h = altura;<BR/>";
+	echo '</BR>';
+	echo"<b>=> EXERCÍCIO 13</b></BR></BR>";	
+	switch($lados){
+		case(1):	
+			echo"A área do quadrado é: B x B, ou B² <BR/> ";
+			break;
+		case(2):
+			echo"A área do retângulo é: B x h<BR/> ";
+			break;		
+		case(3):
+			echo"A área do triângulo é: (B x h)/ 2<BR/> ";
+			break;				
+		default:
+			echo"Lados inválidos<BR/> ";
+			break;				
+	}			
+?>
