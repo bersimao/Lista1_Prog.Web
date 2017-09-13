@@ -1,0 +1,26 @@
+<?php
+	header("Content-type: text/html; charset=utf-8");
+?>
+
+<?php
+	
+	$vetor[10] = array();
+	$soma=0;
+	echo '</BR>';
+	echo"<b>=> EXERCÍCIO 27</b></BR></BR>";	
+	echo"<b>=> VETOR ALEATÓRIO</b></BR>";	
+	for($i = 0; $i < 10; $i++){
+		$vetor[$i] = (float)(mt_rand(0, 100))/10;
+	}
+	echo '<ul></ul>';
+
+	for($i = 0; $i < 10; $i++){
+		echo number_format($vetor[$i],1)." | ";
+		$soma += $vetor[$i];
+	}	
+	
+	echo '</BR>';
+	
+	echo "A soma dos números do VETOR é = $soma</BR>";
+
+?>
