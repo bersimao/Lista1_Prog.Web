@@ -1,0 +1,15 @@
+<?php
+	header("Content-type: text/html; charset=utf-8");
+?>
+
+<?php
+
+	$numero = 10;
+	echo '</BR>';
+	echo"<b>=> EXERCÍCIO 05</b></BR></BR>";	
+	$numero--;
+	echo"Anterior = $numero <BR/> ";
+	$numero += 2;
+	echo"Posterior = $numero <BR/> ";	
+		
+?>
