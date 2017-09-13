@@ -1,0 +1,16 @@
+<?php
+	header("Content-type: text/html; charset=utf-8");
+?>
+
+<?php
+
+	$cm = 1;
+	$m = $cm*100;
+	$km = $m*100;
+	echo '</BR>';
+	echo"<b>=> EXERCÍCIO 11</b></BR></BR>";	
+	echo"-> $cm centímetro(s), é igual a<BR/>";
+	echo"-> $m metro(s), e<BR/> ";
+	echo"-> $km quilometro(s) .<BR/> ";
+	
+?>
