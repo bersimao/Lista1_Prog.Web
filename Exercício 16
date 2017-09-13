@@ -1,0 +1,11 @@
+<?php
+	header("Content-type: text/html; charset=utf-8");
+?>
+
+<?php
+	echo '</BR>';
+	echo"<b>=> EXERCÍCIO 16</b></BR></BR>";
+	for($i = 255; $i <= 555; $i++)
+	echo"$i<BR/>";	
+
+?>
