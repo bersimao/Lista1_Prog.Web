@@ -1,0 +1,27 @@
+<?php
+	header("Content-type: text/html; charset=utf-8");
+?>
+
+<?php
+	
+	$vetor = array(1, 1, 1, 1, 1);
+	$matriz = array(
+					array(7,7),
+					array(7,7)
+					);
+	echo '</BR>';
+	echo"<b>=> EXERCÍCIO 24</b></BR></BR>";	
+	echo"<b>=> VETOR</b></BR>";	
+	for($i = 0; $i < 5; $i++){
+		echo"$vetor[$i] ";
+	}
+	echo '<ul></ul>';
+	echo"<b>=> MATRIZ</b></BR>";
+	for($lin = 0; $lin < 2; $lin++){
+		for($col = 0; $col < 2; $col++){
+			echo $matriz[$lin][$col]." ";
+		}	
+		echo'</BR>';
+	}
+	
+?>
