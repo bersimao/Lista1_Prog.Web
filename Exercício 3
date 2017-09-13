@@ -1,9 +1,19 @@
 <?php
-$numero=0;
+	header("Content-type: text/html; charset=utf-8");
+?>
 
-do{
-echo"$numero<BR/>";
-$numero++;
-}
-while($numero<101);
+<?php
+
+	$numero1 = 10;
+	$numero2 = 8;
+	echo '</BR>';
+	echo"<b>=> EXERCÍCIO 03</b></BR></BR>";
+	if($numero1 == $numero2){
+		echo"Números iguais";}
+		
+	elseif ($numero1 > $numero2){
+		echo"O maior número é $numero1 <BR/>";}
+		
+		else{
+			echo"O maior número é $numero2 <BR/>";}
 ?>
