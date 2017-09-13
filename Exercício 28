@@ -1,0 +1,57 @@
+<?php
+	header("Content-type: text/html; charset=utf-8");
+?>
+
+<?php
+	
+	$v1[10] = array();
+	$v2[10] = array();
+	$vsoma = array();
+	$vsub = array();
+	$vdiv = array();
+	$vmult = array();
+	echo '</BR>';
+	echo"<b>=> EXERCÍCIO 28</b></BR></BR>";		
+	for($i = 0; $i < 10; $i++){
+		$v1[$i] = (float)(mt_rand(1, 100))/10;
+		$v2[$i] = (float)(mt_rand(1, 100))/10;
+	}
+	echo '<ul></ul>';
+	echo"<b>=> VETOR ALEATÓRIO <font color = 'red'>1</font></b></BR>";
+	for($i = 0; $i < 10; $i++){
+		echo $v1[$i]." | ";
+	}	
+	echo '<ul></ul>';
+	echo"<b>=> VETOR ALEATÓRIO <font color = 'blue'>2</font></b></BR>";	
+	for($i = 0; $i < 10; $i++){
+		echo $v2[$i]." | ";
+	}
+	
+	echo '<ul></ul>';
+	echo"<b>=> VETOR <font color = 'yellow'>SOMA</font></b></BR>";	
+	for($i = 0; $i < 10; $i++){
+		$vsoma[$i] = $v1[$i] + $v2[$i]; 
+		echo str_pad($vsoma[$i], 4, '0', STR_PAD_LEFT)." | ";
+	}
+	
+	echo '<ul></ul>';
+	echo"<b>=> VETOR <font color = 'orange'>SUBTRAÇÃO</font></b></BR>";	
+	for($i = 0; $i < 10; $i++){
+		$vsub[$i] = $v1[$i] - $v2[$i]; 
+		echo str_pad($vsub[$i], 4, '0', STR_PAD_LEFT)." | ";
+	}
+
+	echo '<ul></ul>';
+	echo"<b>=> VETOR <font color = 'green'>MULTIPLICAÇÃO</font></b></BR>";	
+	for($i = 0; $i < 10; $i++){
+		$vmult[$i] = $v1[$i] * $v2[$i]; 
+		echo str_pad($vmult[$i], 4, '0', STR_PAD_LEFT)." | ";
+	}
+	
+	echo '<ul></ul>';
+	echo"<b>=> VETOR <font color = 'bronw'>DIVISÃO</font></b></BR>";	
+	for($i = 0; $i < 10; $i++){
+		$vdiv[$i] = $v1[$i]/ $v2[$i]; 
+		echo number_format($vdiv[$i],2)." | ";
+	}
+?>
