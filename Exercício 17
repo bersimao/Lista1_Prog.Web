@@ -1,0 +1,13 @@
+<?php
+	header("Content-type: text/html; charset=utf-8");
+?>
+
+<?php
+	echo '</BR>';
+	echo"<b>=> EXERCÍCIO 17</b></BR></BR>";
+	for($i = 53; $i <= 521; $i++){
+	if($i%2 == 0)
+	echo"$i<BR/>";		
+	}	
+	
+?>
