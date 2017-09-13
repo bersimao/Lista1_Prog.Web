@@ -1,0 +1,31 @@
+<?php
+	header("Content-type: text/html; charset=utf-8");
+?>
+
+<?php
+	
+	$matriz[20][20] = array();
+	$par=0;
+	$impar=0;
+	echo '</BR>';
+	echo"<b>=> EXERCÍCIO 30</b></BR></BR>";	
+	echo '<ul></ul>';
+	echo"<b>=> MATRIZ ALEATÓRIA 20 X 20</b></BR>";
+	for($lin = 0; $lin < 20; $lin++){
+		for($col = 0; $col < 20; $col++){
+			$matriz[$lin][$col] = mt_rand(1, 100);
+			echo str_pad($matriz[$lin][$col], 3, '0', STR_PAD_LEFT)." | ";
+			if($matriz[$lin][$col] % 2 ==0)
+				$par += $matriz[$lin][$col];
+			else
+				$impar += $matriz[$lin][$col];
+		}
+		echo'</BR>';		
+	}	
+	
+	echo '</BR>';
+	
+	echo "A soma dos números pares é = $par</BR>";
+	echo "A soma dos números ímpares é = $impar</BR>";
+	
+?>
