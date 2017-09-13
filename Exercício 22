@@ -1,0 +1,16 @@
+<?php
+	header("Content-type: text/html; charset=utf-8");
+?>
+
+<?php
+	echo '</BR>';
+	echo"<b>=> EXERCÍCIO 22</b></BR></BR>";
+	for($i = -100; $i <= 100; $i++){
+		if($i < 0)
+			echo"<font color='red'>$i</font><BR/>";
+		if($i == 0)
+			echo"<b><u>$i</u></b><BR/>";
+		if($i > 0)
+			echo"<font color='orange' size='15'>$i</font><BR/>";
+	}
+?>
