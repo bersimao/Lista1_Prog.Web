@@ -1,0 +1,19 @@
+<?php
+	header("Content-type: text/html; charset=utf-8");
+?>
+
+<?php
+	
+	$matriz[10][10] = array();
+	echo '</BR>';
+	echo"<b>=> EXERCÍCIO 29</b></BR></BR>";	
+	echo '<ul></ul>';
+	echo"<b>=> MATRIZ ALEATÓRIA 10 X 10</b></BR>";
+	for($lin = 0; $lin < 10; $lin++){
+		for($col = 0; $col < 10; $col++){
+			$matriz[$lin][$col] = (float)(mt_rand(1, 100)/10);
+			echo number_format($matriz[$lin][$col],2)." | ";				
+		}	
+		echo'</BR>';
+	}
+?>
