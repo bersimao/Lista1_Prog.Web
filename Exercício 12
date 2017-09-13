@@ -1,0 +1,27 @@
+<?php
+	header("Content-type: text/html; charset=utf-8");
+?>
+
+<?php
+
+	$num = 3;
+	echo '</BR>';
+	echo"<b>=> EXERCÍCIO 12</b></BR></BR>";	
+	switch($num){
+		case(3):	
+			echo"TRIÂNGULO<BR/> ";
+			break;
+		case(4):
+			echo"QUADRADO<BR/> ";
+			break;		
+		case(5):
+			echo"PENTÁGONO<BR/> ";
+			break;	
+		case(6):
+			echo"HEXÁGONO<BR/> ";
+			break;			
+		default:
+			echo"FORMA DESCONHECIDA<BR/> ";
+			break;				
+	}			
+?>
