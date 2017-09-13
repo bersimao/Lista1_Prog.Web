@@ -1,0 +1,53 @@
+<?php
+	header("Content-type: text/html; charset=utf-8");
+?>
+
+<?php
+	
+	$mat1[5][5] = array();
+	$mat2[5][5] = array();
+	$somat = array();
+	$difmat = array();
+	
+	echo '</BR>';
+	echo"<b>=> EXERCÍCIO 32</b></BR></BR>";
+	echo"<b>=> MATRIZ ALEATÓRIA 1</b></BR>";	
+	for($lin = 0; $lin < 10; $lin++){
+		for($col = 0; $col < 10; $col++){
+			$mat1[$lin][$col] = (float)(mt_rand(0, 10))/10;
+			echo "<font color = 'white'>_</font>".number_format($mat1[$lin][$col], 2)."<font color = 'white'>_</font>";
+		}
+		echo'</BR>';		
+	}	
+	echo'</BR>';
+	echo"<b>=> MATRIZ ALEATÓRIA 2</b></BR>";	
+	for($lin = 0; $lin < 10; $lin++){
+		for($col = 0; $col < 10; $col++){
+			$mat2[$lin][$col] = (float)(mt_rand(0, 10))/10;
+			echo "<font color = 'white'>_</font>".number_format($mat2[$lin][$col], 2)."<font color = 'white'>_</font>";
+		}
+		echo'</BR>';		
+	}	
+	echo'</BR>';	
+	echo"<b>=> SOMA DAS MATRIZEZ</b></BR>";	
+	for($lin = 0; $lin < 10; $lin++){
+		for($col = 0; $col < 10; $col++){
+			$somat[$lin][$col] = $mat1[$lin][$col] + $mat2[$lin][$col];
+			echo "<font color = 'white'>_</font>".number_format($somat[$lin][$col], 2)."<font color = 'white'>_</font>";
+		}
+		echo'</BR>';		
+	}	
+	echo'</BR>';
+		
+	echo"<b>=> DIFERENÇA DAS MATRIZEZ</b></BR>";	
+	for($lin = 0; $lin < 10; $lin++){
+		for($col = 0; $col < 10; $col++){
+			$difmat[$lin][$col] = $mat1[$lin][$col] - $mat2[$lin][$col];
+			echo "<font color = 'white'>_</font>".number_format($difmat[$lin][$col], 2)."<font color = 'white'>_</font>";
+		}
+		echo'</BR>';		
+	}	
+	echo'</BR>';	
+	
+
+?>
