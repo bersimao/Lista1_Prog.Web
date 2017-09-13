@@ -1,0 +1,15 @@
+<?php
+	header("Content-type: text/html; charset=utf-8");
+?>
+
+<?php
+
+	$celcius = 21;
+	$kelvin;
+	echo '</BR>';
+	echo"<b>=> EXERCÍCIO 08</b></BR></BR>";	
+	$kelvin = $celcius + 273.15;
+	
+	echo"A temperatura em Kelvin é $kelvin º<BR/> ";	
+		
+?>
