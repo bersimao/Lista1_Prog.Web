@@ -1,0 +1,56 @@
+<?php
+	header("Content-type: text/html; charset=utf-8");
+?>
+
+<?php
+	
+	$matriz[10][10] = array();
+	$sup=0;
+	
+	echo '</BR>';
+	echo"<b>=> EXERCÍCIO 31</b></BR></BR>";
+	echo"<b>=> MATRIZ ALEATÓRIA 10 X 10</b></BR>";
+	for($lin = 0; $lin < 10; $lin++){
+		for($col = 0; $col < 10; $col++){
+			$matriz[$lin][$col] = mt_rand(1, 100);
+			echo "<font color = 'white'>_</font>".str_pad($matriz[$lin][$col], 3, '0', STR_PAD_LEFT)."<font color = 'white'>_</font>";
+		}
+		echo'</BR>';		
+	}	
+	echo '</BR>';
+
+	echo"<b>=> DIAGONAL PRINCIPAL</b></BR>";	
+	for($lin = 0; $lin < 10; $lin++){
+		for($col = 0; $col < 10; $col++){
+			if($lin == $col)
+				echo "<font color = 'white'>_</font>".str_pad($matriz[$lin][$col], 3, '0', STR_PAD_LEFT)."<font color = 'white'>_</font>";
+			else
+				echo "<font color ='white'>_____</font>";
+		}
+		echo'</BR>';		
+	}
+	
+	echo"<b>=> TRIÂNGULO SUPERIOR</b></BR>";	
+	for($lin = 0; $lin < 10; $lin++){
+		for($col = 0; $col < 10; $col++){
+			if($lin <= $col)
+				echo "<font color = 'white'>_</font>".str_pad($matriz[$lin][$col], 3, '0', STR_PAD_LEFT)."<font color = 'white'>_</font>";
+			else
+				echo "<font color ='white'>_____</font>";
+		}
+		echo'</BR>';
+	}
+	
+	echo"<b>=> TRIÂNGULO INFERIOR</b></BR>";	
+	for($lin = 0; $lin < 10; $lin++){
+		for($col = 0; $col < 10; $col++){
+			if($lin >= $col)
+				echo "<font color = 'white'>_</font>".str_pad($matriz[$lin][$col], 3, '0', STR_PAD_LEFT)."<font color = 'white'>_</font>";
+			else
+				echo "<font color ='white'>_____</font>";
+		}
+		echo'</BR>';
+	}
+	
+
+?>
