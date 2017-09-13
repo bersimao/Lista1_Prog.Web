@@ -1,0 +1,28 @@
+<?php
+	header("Content-type: text/html; charset=utf-8");
+?>
+
+<?php
+
+	$n1 = 5;
+	$n2 = 4;
+	$n3 = 10;
+	$n4 = 6;
+	$media = ($n1 + $n2 + $n3 + $n4)/ 4;
+	echo '</BR>';
+	echo"<b>=> EXERCÍCIO 14</b></BR></BR>";	
+	switch($media){
+		case($media >= 0 && $media<= 4):	
+			echo"-> Média = $media - REPROVADO	<BR/> ";
+			break;
+		case($media > 4 && $media < 6):
+			echo"-> Média = $media - REPROVADO<BR/> ";
+			break;		
+		case($media >= 6 && $media <= 10):
+			echo"-> Média = $media - APROVADO<BR/> ";
+			break;			
+		default:
+			echo"Notas inválidas<BR/> ";
+			break;				
+	}			
+?>
